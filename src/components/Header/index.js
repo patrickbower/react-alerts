@@ -1,13 +1,14 @@
 import React from 'react'
 import './header.css';
+// assets
 import logo from '../../assets/images/logo.svg'
 
 function Header() {
   return (
-    <header className="app-header">
+    <div className="app-header">
       <img src={logo} className="app-logo" alt="logo" />
-      <p>Hello World!</p>
-    </header>
+      <p>My Great App</p>
+    </div>
   );
 }
 
