@@ -1,10 +1,2 @@
-import React from 'react'
-import './toaster.css';
-
-function Toaster() {
-  return (
-    <div className="toaster">Toaster</div>
-  );
-}
-
-export default Toaster;
+// index.js should do one thing: export from './component-name-topmost.js';
+export { default } from './toaster-container.js';

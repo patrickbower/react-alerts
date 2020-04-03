@@ -1,13 +1,8 @@
-.app-logo {
-  height: 3em;
+.logo {
+  height: 4em;
   pointer-events: none;
 }
 
-.app-header {
-  background-color: white;
-  color: #282c34;
-  display: grid;
-  grid-template-columns: auto 5fr;
-  text-align: left;
-  padding: 2rem 1rem;
+.header {
+  margin-top: 2rem;
 }
