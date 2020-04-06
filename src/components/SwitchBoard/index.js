@@ -1,2 +1,1 @@
-import SwitchBoard from "./switch-board";
-export default SwitchBoard;
+export { default } from './switch-board-view';

@@ -3,6 +3,7 @@ import './app.css';
 import Header from './Header';
 import Body from './Body';
 import Toaster from './Toaster';
+import Bar from './Bar';
 import AlertContext from '../context/AlertContext';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <AlertContext.Provider value = {alertHook}>
       <div className="app">
+        <Bar />
         <header className="header">
           <Header />
         </header>
