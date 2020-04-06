@@ -1,6 +1,6 @@
 import React from "react";
 import "./body.css";
-import AddItem from '../AddItem';
+import AddItem from "../AddItem";
 
 function Body() {
   return (
@@ -17,25 +17,33 @@ function Body() {
         better understanding of usage can aid in prioritizing future efforts and
         out of the loop, what do you feel you would bring to the table if you
         were hired for this position, your work on this project has been really
-        impactful. Granularity design thinking. One-sheet deliverables so
-        synergestic actionables crank this out or you gotta smoke test your
-        hypothesis nor marketing computer development html roi feedback team
-        website they have downloaded gmail and seems to be working for now.
-        High-level ultimate measure of success. Come up with something
-        buzzworthy. Bob called an all-hands this afternoon flesh that out.
-        Innovation is hot right now. This vendor is incompetent draw a line in
-        the sand, or player-coach we need to crystallize a plan come up with
-        something buzzworthy. But what's the real problem we're trying to solve
-        here?. High turnaround rate new economy so dogpile that. We have put the
-        apim bol, temporarily so that we can later put the monitors on we need
-        to leverage our synergies, so paddle on both sides, and execute , for
-        define the underlying principles that drive decisions and strategy for
-        your design language highlights . Core competencies action item, yet
-        usabiltiy. Marketing computer development html roi feedback team website
-        re-inventing the wheel, and put your feelers out, for no scraps hit the
-        floor, so core competencies, for pipeline, critical mass.
+        impactful.
       </p>
-      <AddItem />
+      <div className="buttons">
+        <AddItem>Banner</AddItem>
+        <AddItem>Bar</AddItem>
+        <AddItem>Push</AddItem>
+        <AddItem>Toast</AddItem>
+      </div>
+      <p>
+        Granularity design thinking. One-sheet deliverables so synergestic
+        actionables crank this out or you gotta smoke test your hypothesis nor
+        marketing computer development html roi feedback team website they have
+        downloaded gmail and seems to be working for now. High-level ultimate
+        measure of success. Come up with something buzzworthy. Bob called an
+        all-hands this afternoon flesh that out. Innovation is hot right now.
+        This vendor is incompetent draw a line in the sand, or player-coach we
+        need to crystallize a plan come up with something buzzworthy. But what's
+        the real problem we're trying to solve here?. High turnaround rate new
+        economy so dogpile that. We have put the apim bol, temporarily so that
+        we can later put the monitors on we need to leverage our synergies, so
+        paddle on both sides, and execute , for define the underlying principles
+        that drive decisions and strategy for your design language highlights .
+        Core competencies action item, yet usabiltiy. Marketing computer
+        development html roi feedback team website re-inventing the wheel, and
+        put your feelers out, for no scraps hit the floor, so core competencies,
+        for pipeline, critical mass.
+      </p>
     </div>
   );
 }
