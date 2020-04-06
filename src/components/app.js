@@ -1,15 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './app.css';
 import Header from './Header';
 import Body from './Body';
 import Toaster from './Toaster';
 import AlertContext from '../context/AlertContext';
 
-const alert = "toaster";
-
-function app() {
+function App() {
+  const alertHook = useState('toaster');
   return (
-    <AlertContext.Provider value={alert}>
+    <AlertContext.Provider value = {alertHook}>
       <div className="app">
         <header className="header">
           <Header />
@@ -23,4 +22,4 @@ function app() {
   );
 }
 
-export default app;
+export default App;

@@ -1,5 +1,4 @@
-import React from "react";
+import {createContext} from "react";
 
-// const AlertContext = React.createContext(["toaster", () => {}]);
-const AlertContext = React.createContext("toaster");
+const AlertContext = createContext(["toaster", () => {}]);
 export default AlertContext;
