@@ -17,11 +17,16 @@ const SwitchBoard = () => {
     setAlertType("bar");
   };
 
+  const push = event => {
+    event.preventDefault();
+    setAlertType("push");
+  };
+
   return (
     <div className="buttons">
       <AddItem clicked={toast}>Toast</AddItem>
       <AddItem clicked={bar}>Bar</AddItem>
-      <AddItem>Push</AddItem>
+      <AddItem clicked={push}>Push</AddItem>
       <AddItem>Banner</AddItem>
     </div>
   );

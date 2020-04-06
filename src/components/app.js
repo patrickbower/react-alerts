@@ -5,6 +5,7 @@ import Body from './Body';
 import Toaster from './Toaster';
 import Bar from './Bar';
 import AlertContext from '../context/AlertContext';
+import Push from './Push';
 
 function App() {
   const alertHook = useState(undefined);
@@ -12,6 +13,7 @@ function App() {
     <AlertContext.Provider value = {alertHook}>
       <div className="app">
         <Bar />
+        <Push />
         <header className="header">
           <Header />
         </header>
