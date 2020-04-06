@@ -5,7 +5,7 @@ import Body from './Body';
 import Toaster from './Toaster';
 import AlertContext from '../context/AlertContext';
 
-// const alert = "alertzzzz";
+const alert = "toaster";
 
 function app() {
   return (
