@@ -4,6 +4,7 @@ import AlertContext from "../../context/AlertContext";
 
 const SwitchBoard = () => {
   const [getAlertType, setAlertType] = useContext(AlertContext);
+  console.log(getAlertType);
 
   const toast = event => {
     event.preventDefault();
