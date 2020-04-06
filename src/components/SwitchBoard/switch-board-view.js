@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import AddItem from "../AddItem";
 import AlertContext from "../../context/AlertContext";
+import './switch-board.css'
 
 const SwitchBoard = () => {
   const [getAlertType, setAlertType] = useContext(AlertContext);

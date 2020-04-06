@@ -1,3 +1,8 @@
 .app {
   min-height: 100vh;
 }
+
+.clear-top {
+  padding-top: 0;
+  margin-top: 0;
+}

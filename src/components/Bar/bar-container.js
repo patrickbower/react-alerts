@@ -9,8 +9,6 @@ const BarContainer = props => {
     event.preventDefault();
     setAlertType(undefined);
   }
-
-  console.log(getAlertType);
   
   return getAlertType === "bar" ? <Bar clicked={close} /> : false;
 };

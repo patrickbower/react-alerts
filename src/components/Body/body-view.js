@@ -4,7 +4,7 @@ import SwitchBoard from "../SwitchBoard";
 
 function Body() {
   return (
-    <div>
+    <div className="body">
       <p>
         Time vampire I have zero cycles for this back of the net pig in a
         python, or move the needle single wringable neck or crank this out.

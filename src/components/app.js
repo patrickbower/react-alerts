@@ -17,8 +17,8 @@ function App() {
         </header>
         <main>
           <Body />
-          <Toaster />
         </main>
+        <Toaster />
       </div>
     </AlertContext.Provider>
   );
