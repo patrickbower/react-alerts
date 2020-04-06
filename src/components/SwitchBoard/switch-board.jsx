@@ -1,15 +1,14 @@
-import React, {useContext} from "react";
-import AddItem from  "../AddItem"
-import AlertContext from '../../context/AlertContext';
+import React, { useContext } from "react";
+import AddItem from "../AddItem";
+import AlertContext from "../../context/AlertContext";
 
 const SwitchBoard = () => {
+  const [getAlertType, setAlertType] = useContext(AlertContext);
 
-  const [alertType, setAlertType] = useContext(AlertContext);
-
-  const toast = (event) => {
+  const toast = event => {
     event.preventDefault();
     setAlertType("toaster");
-  }
+  };
 
   return (
     <div className="buttons">
@@ -18,8 +17,7 @@ const SwitchBoard = () => {
       <AddItem>Push</AddItem>
       <AddItem>Banner</AddItem>
     </div>
-  )
-}
+  );
+};
 
 export default SwitchBoard;
-

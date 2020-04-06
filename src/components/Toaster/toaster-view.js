@@ -1,9 +1,7 @@
 import React from "react";
 import "./toaster.css";
 
-
-function Toaster() {
-
+const Toaster = (props) => {
   return (
       <div className="toaster toaster-active">
         <div>
@@ -13,7 +11,7 @@ function Toaster() {
             important to do stuff.
           </p>
         </div>
-        <a href="close" className="close">
+        <a href="close" className="close" onClick={props.clicked}>
           close
         </a>
       </div>  
