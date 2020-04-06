@@ -1,6 +1,6 @@
 import React from "react";
 import "./body.css";
-import AddItem from "../AddItem";
+import SwitchBoard from "../SwitchBoard";
 
 function Body() {
   return (
@@ -19,12 +19,7 @@ function Body() {
         were hired for this position, your work on this project has been really
         impactful.
       </p>
-      <div className="buttons">
-        <AddItem>Banner</AddItem>
-        <AddItem>Bar</AddItem>
-        <AddItem>Push</AddItem>
-        <AddItem>Toast</AddItem>
-      </div>
+      <SwitchBoard />
       <p>
         Granularity design thinking. One-sheet deliverables so synergestic
         actionables crank this out or you gotta smoke test your hypothesis nor

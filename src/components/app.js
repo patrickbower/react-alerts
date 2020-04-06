@@ -6,7 +6,7 @@ import Toaster from './Toaster';
 import AlertContext from '../context/AlertContext';
 
 function App() {
-  const alertHook = useState('toaster');
+  const alertHook = useState(undefined);
   return (
     <AlertContext.Provider value = {alertHook}>
       <div className="app">

@@ -4,10 +4,10 @@ import AlertContext from "../../context/AlertContext";
 
 function ToasterContainer() {
 
-  const alert = useContext(AlertContext);
-  console.log(alert);
+  const [alertType] = useContext(AlertContext);
+  // console.log(alert);
 
-  return alert === 'toaster' ? <Toaster /> : false;
+  return alertType === 'toaster' ? <Toaster /> : false;
 }
 
 export default ToasterContainer;
