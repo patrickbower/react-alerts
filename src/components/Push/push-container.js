@@ -10,8 +10,6 @@ const PushContainer = props => {
     setAlertType(undefined);
   }
 
-  console.log('getAlertType', getAlertType);
-
   return getAlertType === 'push' ? <Push clicked={close} /> : false;
 }
 

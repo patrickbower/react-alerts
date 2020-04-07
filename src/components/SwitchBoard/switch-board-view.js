@@ -7,27 +7,11 @@ const SwitchBoard = () => {
   const [getAlertType, setAlertType] = useContext(AlertContext);
   console.log(getAlertType);
 
-  const toast = event => {
-    event.preventDefault();
-    setAlertType("toaster");
-  };
-
-  const bar = event => {
-    event.preventDefault();
-    setAlertType("bar");
-  };
-
-  const push = event => {
-    event.preventDefault();
-    setAlertType("push");
-  };
-
   return (
     <div className="buttons">
-      <AddItem clicked={toast}>Toast</AddItem>
-      <AddItem clicked={bar}>Bar</AddItem>
-      <AddItem clicked={push}>Push</AddItem>
-      <AddItem>Banner</AddItem>
+      <AddItem clicked={() => {setAlertType('toaster')}}>Toast</AddItem>
+      <AddItem clicked={() => {setAlertType('bar')}}>Bar</AddItem>
+      <AddItem clicked={() => {setAlertType('push')}}>Push</AddItem>
     </div>
   );
 };
