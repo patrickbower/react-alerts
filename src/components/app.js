@@ -8,7 +8,7 @@ import Bar from './Bar';
 import Push from './Push';
 
 function App() {
-  const alertHook = useState(undefined);
+  const alertHook = useState({});
   return (
     <AlertContext.Provider value={alertHook}>
       <div className="app">

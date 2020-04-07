@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
+import React, {useContext} from 'react';
 import Toaster from "./toaster-view";
-import AlertContext from "../../context/AlertContext";
+import AlertContext from '../../context/AlertContext';
 
-function ToasterContainer() {
+const ToasterContainer = () => {
   const [getAlertType, setAlertType] = useContext(AlertContext);
 
-  const close = event => {
+  const close = (event) => {
     event.preventDefault();
-    setAlertType(undefined);
-  };
+    setAlertType({...getAlertType, 'toaster': false});
+  }
 
-  return getAlertType === "toaster" ? <Toaster clicked={close} /> : false;
+  return getAlertType.toaster ? <Toaster clicked={close}/> : false;
 }
 
 export default ToasterContainer;

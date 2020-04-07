@@ -5,13 +5,17 @@ import './switch-board.css'
 
 const SwitchBoard = () => {
   const [getAlertType, setAlertType] = useContext(AlertContext);
-  console.log(getAlertType);
+
+  function updateAlertStore(type) {
+    const alerts = {...getAlertType, [type]: true};
+    setAlertType(alerts);
+  }
 
   return (
     <div className="buttons">
-      <AddItem clicked={() => {setAlertType('toaster')}}>Toast</AddItem>
-      <AddItem clicked={() => {setAlertType('bar')}}>Bar</AddItem>
-      <AddItem clicked={() => {setAlertType('push')}}>Push</AddItem>
+      <AddItem clicked={() => updateAlertStore('toaster')}>Toast</AddItem>
+      <AddItem clicked={() => updateAlertStore('bar')}>Bar</AddItem>
+      <AddItem clicked={() => updateAlertStore('push')}>Push</AddItem>
     </div>
   );
 };
