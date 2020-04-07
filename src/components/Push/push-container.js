@@ -6,9 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 const PushContainer = () => {
   const [getAlertType, setAlertType] = useContext(AlertContext);
 
-  const close = (event) => {
+  function close(event, id) {
     event.preventDefault();
-    setAlertType({...getAlertType, 'push': 0});
+    const filteredItems = getAlertType.push.filter(item => item !== id)
+    setAlertType({...getAlertType, 'push': filteredItems});
   }
 
   
@@ -16,15 +17,15 @@ const PushContainer = () => {
     return (
       <ul className="push-container">
         <AnimatePresence initial={false}>
-          {Array(getAlertType.push).fill("example").map((id, index) => (
+          {getAlertType.push.map((id) => (
             <motion.li
-              key={index}
+              key={id}
               positionTransition
               initial={{ opacity: 0, y: 50, scale: 0.3 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 } }}
             >
-              <Push clicked={close}/>
+              <Push clicked={(event) => close(event, id)}/>
             </motion.li>
           ))}
         </AnimatePresence>

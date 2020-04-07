@@ -6,21 +6,26 @@ import './switch-board.css'
 const SwitchBoard = () => {
   const [getAlertType, setAlertType] = useContext(AlertContext);
 
-  function updateAlertStore(type, value) {
+  const updateAlertStore = (type, value) => {
+    console.log(type, value);
     const alerts = {...getAlertType, [type]: value};
     setAlertType(alerts);
   }
 
-  function pushCount() {
-    const count = getAlertType.push || 0;
-    return count + 1;
+  const updatePushStore = () => {
+    // get count or create
+    const count = getAlertType.push ? getAlertType.push.length : 0;
+    // use a dummy array
+    let dummyArr = ['a','b','c'];
+    // return dummy array cut by count
+    return dummyArr.splice(0, count + 1);
   }
 
   return (
     <div className="buttons">
       <AddItem clicked={() => updateAlertStore('toaster', true)}>Toast</AddItem>
       <AddItem clicked={() => updateAlertStore('bar', true)}>Bar</AddItem>
-      <AddItem clicked={() => updateAlertStore('push', pushCount())}>Push</AddItem>
+      <AddItem clicked={() => updateAlertStore('push', updatePushStore())}>Push</AddItem>
     </div>
   );
 };
