@@ -7,18 +7,13 @@ const SwitchBoard = () => {
   const [getAlertType, setAlertType] = useContext(AlertContext);
 
   const updateAlertStore = (type, value) => {
-    console.log(type, value);
     const alerts = {...getAlertType, [type]: value};
     setAlertType(alerts);
   }
 
   const updatePushStore = () => {
-    // get count or create
     const count = getAlertType.push ? getAlertType.push.length : 0;
-    // use a dummy array
-    let dummyArr = ['a','b','c'];
-    // return dummy array cut by count
-    return dummyArr.splice(0, count + 1);
+    return ['a','b','c'].splice(0, count + 1);
   }
 
   return (

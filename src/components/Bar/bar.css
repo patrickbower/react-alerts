@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 2fr 4fr 1fr;
   align-items: top;
+  border-bottom: 0.2rem solid white;
 }
 
 .bar>* {

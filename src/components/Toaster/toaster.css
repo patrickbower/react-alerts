@@ -9,6 +9,7 @@
   bottom: -1rem;
   left: 1rem;
   right: 1rem;
+  border-top: 0.2rem solid white;
 }
 
 .close {

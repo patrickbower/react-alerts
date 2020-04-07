@@ -2,6 +2,8 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
+  list-style: none;
+  z-index: 1;
 }
 
 .push {
@@ -12,6 +14,7 @@
   display: grid;
   grid-template-columns: 5fr 1fr;
   align-items: start;
+  border: 0.2rem solid white;
 }
 
 .close {
